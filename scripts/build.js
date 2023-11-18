@@ -4,7 +4,7 @@ const execa = require('execa')
 const dirs = fs.readdirSync('packages').filter(file => {
     return file !== 'examples'&&  fs.statSync(`packages/${file}`).isDirectory()
 });
-
+console.log(1111);
 const build = async (target) => {
     console.log(target);
     // -env: --environment
